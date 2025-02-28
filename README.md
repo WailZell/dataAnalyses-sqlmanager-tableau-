@@ -12,15 +12,3 @@
 
 ---
 
-## 🔎 **Exemples d'analyses**  
-
-### 1. **Taux de mortalité par pays**  
-```sql
-SELECT 
-    location, 
-    date, 
-    total_cases, 
-    total_deaths, 
-    (total_deaths * 100.0 / total_cases) AS death_rate
-FROM CovidDeaths
-WHERE continent IS NOT NULL;
